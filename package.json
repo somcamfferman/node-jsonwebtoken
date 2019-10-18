@@ -1,8 +1,11 @@
 {
-  "name": "jsonwebtoken",
+  "name": "jsonwebtoken-aws-oidc-fix",
   "version": "8.5.1",
   "description": "JSON Web Token implementation (symmetric and asymmetric)",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://artifactory.persgroep.cloud/artifactory/api/npm/npm-local"
+  },
   "nyc": {
     "check-coverage": true,
     "lines": 95,
@@ -66,6 +69,7 @@
     "lib",
     "decode.js",
     "sign.js",
-    "verify.js"
+    "verify.js",
+    "index.d.ts"
   ]
 }
